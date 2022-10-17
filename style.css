@@ -1,0 +1,346 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --blue: #0024FF;
+  --darkblue: #000525;
+  --white: white;
+  --black: black;
+  --green: #2E8200;
+}
+body{
+  background: var(--white);
+  left: 2rem;
+}
+.loading_app{
+  width: 100%;
+  height: 100vh;
+  background: var(--darkblue);
+}
+.loading_app img{
+  position: relative;
+  top: 8.8rem;
+  left: 3rem;
+}
+.heading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  z-index: 40;
+}
+.heading #physical_virtual {
+  display: flex;
+  justify-content: space-around;
+}
+#physical_virtual h4{
+  font-size: 1rem;
+  font-weight: 500;
+  fofont-family: Arial,Helvetica, sans-serif;
+}
+.greenBar{
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: 1.6rem;
+  width: 40%;
+  height: 0.14rem;
+  background: var(--green);
+  border-radius: 2px;
+  transition: .1s;
+}
+.heading h4{
+  margin: 1rem 1rem 0rem 1rem;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.navBar{
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  box-shadow: 0px 0px 3px lightgray;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.6rem;
+  background: var(--white);
+  z-index: 30;
+}
+.navBar p{
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.navBar i{
+  margin-left: 0.4rem;
+}
+.cardPage{
+  overflow: hidden;
+}
+.cards{
+  width: 100%;
+  height:100vh;
+}
+.physical{
+  position: relative;
+  top: 5.7rem;
+  width: 98%;
+  overflow: hidden;
+  transition: .1s;
+}
+.creditCard{
+  width: 85%;
+  height: 9rem;
+  margin-left: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  background: url('/images /bg1.jpeg');
+  transition: .1s;
+}
+.creditCard .logo{
+  display: flex;
+  justify-content: space-around;
+  transition: .1s;
+}
+.creditCard #creditCardimg{
+  width: 30%;
+  height:60%;
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+}
+.creditCard h6{
+  font-size: 1rem;
+  margin-left: 10rem;
+  margin-top: 0.8rem;
+  color: var(--white);
+}
+.creditCard #chip{
+  width: 4.3rem;
+  height: 3.6rem;
+  margin-top: 0.5rem;
+}
+.creditCard h4{
+  position: relative;
+  bottom: -1rem;
+  right: -13rem;
+  color: var(--white);
+}
+.getCardNow{
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  height: 4.3rem;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 2px slategray;
+  z-index: 10; 
+  background: var(--white);
+}
+.getCardNow button{
+  width: 80%;
+  height: 3rem;
+  background: var(--green);
+  margin-left: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.phyCardInfo{
+  margin: 1.7rem 1rem 1rem 1rem;
+}
+.phyCardInfo h4{
+  margin-top: 1rem;
+}
+.phyCardInfo i{
+  background: rgba(138, 247, 178, 0.5);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  padding: 0.4rem;
+  border: 1px solid green;
+}
+.virtual{
+  position: relative;
+  right: -20rem;
+  top: -14.25rem;
+  width: 98%;
+  transition: .1s;
+}
+.virtualCard{
+  width: 85%;
+  height: 9rem;
+  margin-left: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  background: url('/images /bg1.jpeg');
+  transition: .5s;
+}
+.virtualCard #virtualCardimg{
+  width: 50%;
+  height: 9rem;
+  position: absolute;
+  top: -2.5rem;
+  left: 0.5rem;
+  transition: .1s;
+}
+.virtualCard .cudosVirtual{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: -7rem;
+  color: var(--white);
+}
+.cudosVirtual h3{
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+#personalInfo{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: white;
+  z-index: 400;
+  display: none;
+}
+#personalInfo .navigation{
+  width: 100%;
+  height: 3rem;
+  border: 2px solid gainsboro;
+  margin-bottom: 1rem;
+  background: white;
+  position: fixed;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+#personalInfo form{
+  margin: 5rem 1rem 3rem 1rem;
+}
+#personalInfo label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+#personalInfo input{
+  width: 100%;
+  height: 3rem;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: rgba(232, 232, 232, 1);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+#personalInfo button{
+  width: 8rem;
+  height: 3rem;
+  margin: 0.1rem;
+  appearance: none;
+  border: none;
+  background: rgba(232, 232, 232, 1);
+}
+#personalInfo button{
+  border-radius: 8px;
+}
+#personalInfo #submit{
+  width: 100%;
+  height: 3rem;
+  background: rgba(104, 229, 54, 1);
+  margin: 1rem 0.25 1rem 0.25;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px black;
+}
+.successful{
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  padding: 12rem 1rem 0rem 1rem;
+  display: none;
+}
+.successful h4{
+  margin: 0rem 3rem 0rem 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.successful h5{
+  margin: 0rem 2rem 0rem 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.deliveryDetails{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: white;
+  z-index: 400;
+}
+#deliveryDetails .navigation{
+  width: 100%;
+  height: 3rem;
+  border: 2px solid gainsboro;
+  margin-bottom: 1rem;
+  background: white;
+  position: fixed;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+#deliveryDetails form{
+  margin: 5rem 1rem 3rem 1rem;
+}
+#deliveryDetails label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+#deliveryDetails input{
+  width: 100%;
+  height: 3rem;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: rgba(232, 232, 232, 1);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+#deliveryDetails button{
+  width: 8rem;
+  height: 3rem;
+  margin: 0.1rem;
+  appearance: none;
+  border: none;
+  background: rgba(232, 232, 232, 1);
+}
+#deliveryDetails button{
+  border-radius: 8px;
+}
+.deliveryDetails #submit{
+  width: 100%;
+  height: 3rem;
+  background: rgba(104, 229, 54, 1);
+  margin: 1rem 0.25 1rem 0.25;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px black;
+}
+.successful{
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  padding: 12rem 1rem 0rem 1rem;
+  display: none;
+}
+.successful h4{
+  margin: 0rem 3rem 0rem 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.successful h5{
+  margin: 0rem 2rem 0rem 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
